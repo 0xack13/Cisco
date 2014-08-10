@@ -5,23 +5,29 @@ version = 0.8.7
     udp = 10001
     [[3725]]
         image = C:\Downloads\C3725-AD.BIN
+        ram = 192
+        nvram = 131
         sparsemem = True
         ghostios = True
     [[ROUTER R1]]
         model = 3725
         console = 2101
         aux = 2501
+        ram = 200
+        nvram = 203
         cnfg = configs\R1.cfg
         slot1 = NM-16ESW
         f1/0 = R2 f1/0
         f1/1 = R3 f1/1
-        x = -70.0
+        x = -71.0
         y = -220.0
         z = 1.0
     [[ROUTER R2]]
         model = 3725
         console = 2102
         aux = 2502
+        ram = 168
+        nvram = 135
         cnfg = configs\R2.cfg
         slot1 = NM-16ESW
         f1/0 = R1 f1/0
@@ -43,15 +49,15 @@ version = 0.8.7
 [GNS3-DATA]
     configs = configs
     [[NOTE 1]]
-        text = "f1/1"
-        x = 10.3672092782
-        y = -52.515482247
-        interface = R3 f1/1
-    [[NOTE 2]]
         text = "f1/2"
         x = -53.9988463886
         y = 33.3037887067
         interface = R3 f1/2
+    [[NOTE 2]]
+        text = "f1/1"
+        x = 10.3672092782
+        y = -52.515482247
+        interface = R3 f1/1
     [[NOTE 3]]
         text = "f1/2"
         x = 76.9988463886
