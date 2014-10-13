@@ -1,0 +1,75 @@
+autostart = False
+version = 0.8.6
+[127.0.0.1:7200]
+    workingdir = G:\0xack13\Cisco-Labs\Switching\STP-Lab2\STPL3\working
+    udp = 10001
+    [[3725]]
+        image = C:\Users\0xack13\Downloads\c3725-adventerprisek9-mz.124-25b.image
+        ram = 128
+        sparsemem = True
+        ghostios = True
+    [[ROUTER R1]]
+        model = 3725
+        console = 2101
+        aux = 2501
+        cnfg = configs\R1.cfg
+        slot1 = NM-16ESW
+        f1/0 = R2 f1/0
+        f1/1 = R3 f1/0
+        x = -68.0
+        y = -177.0
+        z = 1.0
+    [[ROUTER R2]]
+        model = 3725
+        console = 2102
+        aux = 2502
+        cnfg = configs\R2.cfg
+        slot1 = NM-16ESW
+        f1/0 = R1 f1/0
+        f1/1 = R3 f1/1
+        x = 128.0
+        y = 18.0
+        z = 1.0
+    [[ROUTER R3]]
+        model = 3725
+        console = 2103
+        aux = 2503
+        cnfg = configs\R3.cfg
+        slot1 = NM-16ESW
+        f1/0 = R1 f1/1
+        f1/1 = R2 f1/1
+        x = -231.0
+        y = 22.0
+        z = 1.0
+[GNS3-DATA]
+    configs = configs
+    [[NOTE 1]]
+        text = "f1/0"
+        x = 58.346443426
+        y = -8.94443093114
+        interface = R3 f1/0
+    [[NOTE 2]]
+        text = "f1/1"
+        x = 72.9975173206
+        y = 21.5543452109
+        interface = R3 f1/1
+    [[NOTE 3]]
+        text = "f1/1"
+        x = -6.99751732057
+        y = 22.4456547891
+        interface = R2 f1/1
+    [[NOTE 4]]
+        text = "f1/0"
+        x = 4.64348320324
+        y = -6.21184069066
+        interface = R2 f1/0
+    [[NOTE 5]]
+        text = "f1/1"
+        x = 7.65355657399
+        y = 52.9444309311
+        interface = R1 f1/1
+    [[NOTE 6]]
+        text = "f1/0"
+        x = 61.3565167968
+        y = 50.2118406907
+        interface = R1 f1/0
