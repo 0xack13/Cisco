@@ -1,7 +1,7 @@
 autostart = False
 version = 0.8.6
 [127.0.0.1:7200]
-    workingdir = G:\0xack13\Cisco-Labs\Switching\STP-Lab2\STPL3\working
+    workingdir = C:\Users\0xack13\AppData\Local\Temp
     udp = 10001
     [[3725]]
         image = C:\Users\0xack13\Downloads\c3725-adventerprisek9-mz.124-25b.image
@@ -43,33 +43,3 @@ version = 0.8.6
         z = 1.0
 [GNS3-DATA]
     configs = configs
-    [[NOTE 1]]
-        text = "f1/0"
-        x = 58.346443426
-        y = -8.94443093114
-        interface = R3 f1/0
-    [[NOTE 2]]
-        text = "f1/1"
-        x = 72.9975173206
-        y = 21.5543452109
-        interface = R3 f1/1
-    [[NOTE 3]]
-        text = "f1/1"
-        x = -6.99751732057
-        y = 22.4456547891
-        interface = R2 f1/1
-    [[NOTE 4]]
-        text = "f1/0"
-        x = 4.64348320324
-        y = -6.21184069066
-        interface = R2 f1/0
-    [[NOTE 5]]
-        text = "f1/1"
-        x = 7.65355657399
-        y = 52.9444309311
-        interface = R1 f1/1
-    [[NOTE 6]]
-        text = "f1/0"
-        x = 61.3565167968
-        y = 50.2118406907
-        interface = R1 f1/0
